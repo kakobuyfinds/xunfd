@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#103e32">
+<title>PikoBuy spreadsheet | Product Finds & Buying Checklist</title>
+<meta name="description" content="Explore a PikoBuy spreadsheet research guide with real CAFANS product finds, category filters, estimated USD prices, sizing checks and a shopping budget planner.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PikoBuy spreadsheet | Browse. Compare. Check.">
+<meta property="og:description" content="Browse real CAFANS catalog selections and compare sizing, product evidence and estimated costs before ordering.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--bg:#f5f6ef;--ink:#17382e;--muted:#596b60;--green:#103e32;--lime:#d7ee98;--line:#dce2d5;--white:#fff;--radius:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #829c2b;outline-offset:4px}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}.skip{position:absolute;top:-80px;left:16px;background:white;padding:12px;z-index:20}.skip:focus{top:10px}header{border-bottom:1px solid var(--line);background:var(--bg)}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0}.logo{font-size:19px;font-weight:850;letter-spacing:-.7px;text-decoration:none}.logo span{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--green);color:var(--lime);margin-right:9px}nav{display:flex;gap:23px;font-size:14px}nav a{text-decoration:none}.hero{padding:68px 0 50px;text-align:center}.eyebrow{text-transform:uppercase;letter-spacing:2.3px;font-size:12px;font-weight:750;color:var(--muted)}h1{font-size:clamp(42px,7vw,82px);letter-spacing:-4px;line-height:1.07;margin:20px 0}h1 em{font-style:normal;color:#55733a}h2{font-size:clamp(28px,4vw,40px);line-height:1.2;letter-spacing:-1.3px;margin:8px 0 15px}h3{line-height:1.35}p{margin:0 0 16px}.intro{max-width:720px;margin:0 auto;color:var(--muted);font-size:18px}.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:27px 0 18px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 23px;border:1px solid var(--green);border-radius:50px;background:var(--green);color:white;text-decoration:none;font-weight:700;cursor:pointer}.btn.light{background:transparent;color:var(--green)}.small{font-size:13px;color:var(--muted)}.strip{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:var(--radius);background:#edf1e5;margin-bottom:60px}.strip div{padding:22px;text-align:center}.strip div+div{border-left:1px solid var(--line)}.strip strong{display:block;font-size:15px}.strip span{font-size:13px;color:var(--muted)}section{scroll-margin-top:25px;margin-bottom:64px}.heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:22px}.heading p{max-width:620px;color:var(--muted);margin-bottom:0}.tag{font-size:12px;padding:7px 12px;border-radius:50px;background:#e6edd9;white-space:nowrap}.tools{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:23px 0}.field{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:650}.field.search{flex:1;min-width:210px}input,select{border:1px solid #cbd5c4;border-radius:10px;padding:11px 12px;background:white;color:var(--ink);min-height:46px;min-width:0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.chip{padding:8px 16px;border:1px solid #ccd6c6;border-radius:40px;background:transparent;color:var(--green);cursor:pointer}.chip[aria-pressed=true]{background:var(--green);color:white;border-color:var(--green)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}.card{background:white;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}.photo{display:block;aspect-ratio:1;background:#ecefe8;overflow:hidden}.photo img{width:100%;height:100%;object-fit:contain;transition:transform .25s}.photo:hover img{transform:scale(1.035)}.copy{padding:20px;display:flex;flex-direction:column;flex:1}.cat{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted)}.copy h3{font-size:18px;margin:7px 0 13px}.price{font-size:22px;font-weight:750;margin-top:auto}.price small{font-size:12px;font-weight:500;color:var(--muted)}.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px}.card-bottom a{font-size:13px;font-weight:700}.save{background:#edf2e6;border:0;border-radius:30px;padding:8px 12px;color:var(--green);cursor:pointer;font-size:12px}.save[aria-pressed=true]{background:var(--lime)}.empty{padding:24px;background:white;border-radius:12px}.note{border-left:3px solid #95ac65;padding:12px 18px;margin-top:20px;background:#eaf0df;color:#435940;font-size:14px}.panels{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.panel{padding:26px;border:1px solid var(--line);background:white;border-radius:var(--radius)}.number{display:inline-grid;place-items:center;width:35px;height:35px;background:var(--lime);border-radius:50%;font-weight:750}.panel h3{font-size:19px}.panel p{color:var(--muted);font-size:15px;margin-bottom:0}.dark{background:var(--green);color:#fff;border-radius:26px;padding:38px}.dark .eyebrow,.dark p{color:#cfddcc}.budget{display:grid;grid-template-columns:1fr 1fr;gap:35px}.budget-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.budget .field{color:#e2ecd8}.total{margin-top:20px;border-top:1px solid #4a6a59;padding-top:18px}.total output{display:block;font-size:38px;font-weight:750;color:var(--lime)}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{border-collapse:collapse;width:100%;background:white;min-width:570px}th,td{text-align:left;padding:17px 20px;border-bottom:1px solid var(--line);font-size:14px}th{background:#e9efdf}tr:last-child td{border-bottom:0}.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}.article{background:#fff;padding:28px;border:1px solid var(--line);border-radius:var(--radius)}.article h3{margin-top:0}.article p{color:var(--muted);font-size:15px}details{border-bottom:1px solid var(--line);padding:18px 0}summary{cursor:pointer;font-weight:700;padding-right:15px}details p{max-width:880px;margin:13px 0 2px;color:var(--muted)}.cta{text-align:center;padding:43px 22px;border-radius:24px;background:var(--lime)}footer{padding:26px 0 35px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:25px}footer p{max-width:780px}.status{min-height:22px;font-size:13px;color:var(--muted);margin-bottom:16px}[hidden]{display:none!important}
+@media(max-width:760px){.wrap{width:min(100% - 28px,1180px)}nav{gap:13px;font-size:12px}.logo{font-size:15px}.logo span{width:28px;height:28px;margin-right:5px}.hero{padding-top:45px}h1{letter-spacing:-2px}.grid{grid-template-columns:repeat(2,1fr);gap:12px}.copy{padding:14px}.copy h3{font-size:16px}.card-bottom{align-items:start;flex-direction:column}.panels,.budget,.two{grid-template-columns:1fr}.heading{align-items:start;flex-direction:column;gap:10px}.strip{margin-bottom:42px}.strip div{padding:16px 8px}.strip strong{font-size:12px}.strip span{font-size:11px}.dark{padding:25px}.footer-row{flex-direction:column;gap:4px}.intro{font-size:16px}section{margin-bottom:45px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.photo img{transition:none}}
+</style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@graph":[
+  {"@type":"WebPage","name":"PikoBuy spreadsheet | Product Finds & Buying Checklist","description":"An independent PikoBuy spreadsheet research guide featuring a dated selection from the CAFANS catalog, product comparison guidance and a budget planner.","inLanguage":"en"},
+  {"@type":"FAQPage","mainEntity":[
+   {"@type":"Question","name":"What is a PikoBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"A PikoBuy spreadsheet is a product research list used to organize finds, source links, selected options, prices and shopping notes. This page combines a CAFANS catalog selection with comparison tools and guidance."}},
+   {"@type":"Question","name":"Do the buttons open PikoBuy?","acceptedAnswer":{"@type":"Answer","text":"No. The PikoBuy spreadsheet and Buy it now buttons both open CAFANS. Confirm agent availability and the exact source listing at the destination before ordering."}},
+   {"@type":"Question","name":"Are the displayed prices the final delivered cost?","acceptedAnswer":{"@type":"Answer","text":"No. Prices are estimated USD amounts captured from CAFANS on November 19, 2026. Shipping, fees, taxes and exchange-rate changes may affect the amount you pay."}},
+   {"@type":"Question","name":"Are the catalog images verified QC photographs?","acceptedAnswer":{"@type":"Answer","text":"The images are catalog images sourced from CAFANS. They are not presented as verified warehouse QC photographs or proof of authenticity."}}
+  ]}
+ ]
+}
+</script>
+<!--
+File: index.html
+
+Research basis, reviewed 2026-11-19:
+https://pikobuybestsheet.com/
+https://chinagrails.com/en/spreadsheet/agent/pikobuy
+https://pikobuyfinds.net/spreadsheet/
+Search results are location-dependent; the retrieved results do not certify Google's exact first-page order.
+
+Implemented opportunities:
+Static, crawlable source-based product cards; clear destination disclosure;
+search and category filters; dated price provenance; shortlist CSV export;
+category-specific comparison guidance; explicit unknown costs; accessible responsive controls.
+No copied competitor descriptions, fabricated reviews, verified-QC labels or inventory counts.
+
+Product source: https://cafans.com/
+Original source record IDs are retained in data-source attributes.
+Both requested CTA labels point to https://cafans.com.
+
+Deployment/indexing status:
+This HTML has not been deployed or submitted to Google or Bing.
+After deployment, set an absolute self-referencing canonical and og:url using the actual page URL.
+Verify the site in Google Search Console and Bing Webmaster Tools,
+submit a sitemap containing the deployed URL, and request indexing.
+HTML alone cannot verify ownership, submit authenticated requests or guarantee indexing.
+-->
+<link rel="canonical" href="https://kakobuyfinds.github.io/xunfd/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="https://cafans.com"><span>P</span>PIKO / FINDS</a>
+  <nav aria-label="Main navigation">
+   <a href="#catalog">Catalog</a>
+   <a href="#guide">Buying guide</a>
+   <a href="#faq">FAQ</a>
+  </nav>
+ </div>
+</header>
+<main id="main" class="wrap">
+ <section class="hero" aria-labelledby="title">
+  <div class="eyebrow">Independent product research • CAFANS catalog selection</div>
+  <h1 id="title">PikoBuy spreadsheet<br><em>Find your next pick.</em></h1>
+  <p class="intro">Compare product finds, check the details that matter, and build a clearer shopping shortlist. Start with real CAFANS catalog selections below.</p>
+  <div class="actions">
+   <a class="btn" href="https://cafans.com">PikoBuy spreadsheet ↗</a>
+   <a class="btn light" href="https://cafans.com">Buy it now ↗</a>
+  </div>
+  <p class="small">Both buttons open CAFANS. This independent guide is not the official PikoBuy website.</p>
+ </section>
+
+ <div class="strip" aria-label="Research features">
+  <div><strong>Real catalog selections</strong><span>Names, images and source prices</span></div>
+  <div><strong>Compare before ordering</strong><span>Size, evidence and total costs</span></div>
+  <div><strong>Your own shortlist</strong><span>Save picks and export a CSV</span></div>
+ </div>
+
+ <section id="catalog" aria-labelledby="catalog-title">
+  <div class="heading">
+   <div><div class="eyebrow">The product edit</div><h2 id="catalog-title">Browse the CAFANS selection</h2><p>A focused catalog snapshot for your PikoBuy spreadsheet research. Use the filters to narrow the selection, then continue to CAFANS to find the current product record.</p></div>
+   <span class="tag">Source checked: <time datetime="2026-11-19">19 Nov 2026</time></span>
+  </div>
+  <div class="tools">
+   <label class="field search">Search this selection<input id="search" type="search" placeholder="Try slides, sweatshirt or T-shirt" autocomplete="off"></label>
+   <label class="field">Sort products<select id="sort"><option value="default">Catalog order</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
+   <button class="btn light" id="export" type="button">Export saved picks</button>
+  </div>
+  <div class="filters" role="group" aria-label="Filter products by category">
+   <button class="chip" aria-pressed="true" data-filter="all" type="button">All finds</button>
+   <button class="chip" aria-pressed="false" data-filter="shoes" type="button">Shoes</button>
+   <button class="chip" aria-pressed="false" data-filter="sweatshirts" type="button">Sweatshirts</button>
+   <button class="chip" aria-pressed="false" data-filter="tshirts" type="button">T-Shirts</button>
+   <button class="chip" aria-pressed="false" data-filter="jackets" type="button">Jackets</button>
+  </div>
+  <p id="status" class="status" role="status" aria-live="polite">6 catalog selections • Estimated prices in USD</p>
+  <div class="grid" id="products">
+   <article class="card" data-category="shoes" data-price="62.36" data-name="Leather Slides" data-source="https://cafans.com/goods-158791.html">
+    <a class="photo" href="https://cafans.com" aria-label="Browse Leather Slides on CAFANS"><img src="https://si.geilicdn.com/open1769158365-252808396-70340000019822fe6f2d0a23b491_1200_1200.jpg" alt="Leather Slides from the CAFANS catalog" width="400" height="400" loading="lazy" decoding="async"></a>
+    <div class="copy"><span class="cat">Shoes</span><h3>Leather Slides</h3><div class="price">$62.36 <small>USD estimate</small></div><div class="card-bottom"><a href="https://cafans.com">Buy it now ↗</a><button class="save" type="button" aria-pressed="false" aria-label="Save Leather Slides">Save pick +</button></div></div>
+   </article>
+   <article class="card" data-category="shoes" data-price="46.67" data-name="Platform Slides" data-source="https://cafans.com/goods-158790.html">
+    <a class="photo" href="https://cafans.com" aria-label="Browse Platform Slides on CAFANS"><img src="https://si.geilicdn.com/open1769158365-252808396-1400000001985b1f67440a8133b0_750_750.jpg" alt="Platform Slides from the CAFANS catalog" width="400" height="400" loading="lazy" decoding="async"></a>
+    <div class="copy"><span class="cat">Shoes</span><h3>Platform Slides</h3><div class="price">$46.67 <small>USD estimate</small></div><div class="card-bottom"><a href="https://cafans.com">Buy it now ↗</a><button class="save" type="button" aria-pressed="false" aria-label="Save Platform Slides">Save pick +</button></div></div>
+   </article>
+   <article class="card" data-category="shoes" data-price="66.50" data-name="Heels" data-source="https://cafans.com/goods-158789.html">
+    <a class="photo" href="https://cafans.com" aria-label="Browse Heels on CAFANS"><img src="https://si.geilicdn.com/open1769158365-252808396-78c100000198a72ba27d0a23b4de_800_800.jpg" alt="Heels from the CAFANS catalog" width="400" height="400" loading="lazy" decoding="async"></a>
+    <div class="copy"><span class="cat">Shoes</span><h3>Heels</h3><div class="price">$66.50 <small>USD estimate</small></div><div class="card-bottom"><a href="https://cafans.com">Buy it now ↗</a><button class="save" type="button" aria-pressed="false" aria-label="Save Heels">Save pick +</button></div></div>
+   </article>
+   <article class="card" data-category="sweatshirts" data-price="27.50" data-name="Sweatshirt" data-source="https://cafans.com/goods-158792.html">
+    <a class="photo" href="https://cafans.com" aria-label="Browse Sweatshirt on CAFANS"><img src="https://si.geilicdn.com/open1862809525-1234478995-56360000019a9d1b5cc60aa081c2_1200_1200.jpg" alt="Sweatshirt from the CAFANS catalog" width="400" height="400" loading="lazy" decoding="async"></a>
+    <div class="copy"><span class="cat">Sweatshirts</span><h3>Sweatshirt</h3><div class="price">$27.50 <small>USD estimate</small></div><div class="card-bottom"><a href="https://cafans.com">Buy it now ↗</a><button class="save" type="button" aria-pressed="false" aria-label="Save Sweatshirt">Save pick +</button></div></div>
+   </article>
+   <article class="card" data-category="tshirts" data-price="32.64" data-name="Unisex Embroidered Oversized T-Shirt" data-source="https://cafans.com/goods-158200.html">
+    <a class="photo" href="https://cafans.com" aria-label="Browse Unisex Embroidered Oversized T-Shirt on CAFANS"><img src="https://si.geilicdn.com/open1792148229-1234478995-4b8f00000196ff70111b0aa08290_1066_1066.jpg" alt="Unisex Embroidered Oversized T-Shirt from the CAFANS catalog" width="400" height="400" loading="lazy" decoding="async"></a>
+    <div class="copy"><span class="cat">T-Shirts</span><h3>Unisex Embroidered Oversized T-Shirt</h3><div class="price">$32.64 <small>USD estimate</small></div><div class="card-bottom"><a href="https://cafans.com">Buy it now ↗</a><button class="save" type="button" aria-pressed="false" aria-label="Save Unisex Embroidered Oversized T-Shirt">Save pick +</button></div></div>
+   </article>
+   <article class="card" data-category="jackets" data-price="84.54" data-name="Jacket" data-source="https://cafans.com/goods-158222.html">
+    <a class="photo" href="https://cafans.com" aria-label="Browse Jacket on CAFANS"><img src="https://si.geilicdn.com/open1792148229-1234478995-05a1000001968565f0740a23b491_415_483.jpg" alt="Jacket from the CAFANS catalog" width="400" height="400" loading="lazy" decoding="async"></a>
+    <div class="copy"><span class="cat">Jackets</span><h3>Jacket</h3><div class="price">$84.54 <small>USD estimate</small></div><div class="card-bottom"><a href="https://cafans.com">Buy it now ↗</a><button class="save" type="button" aria-pressed="false" aria-label="Save Jacket">Save pick +</button></div></div>
+   </article>
+  </div>
+  <p class="empty" id="empty" hidden>No matching products. Try another term or select All finds.</p>
+  <div class="note">These six entries were imported from CAFANS public catalog data on 19 November 2026. Images are source catalog photographs, not verified warehouse QC. Prices are a dated snapshot; availability, agent support and final charges require confirmation at the destination.</div>
+  <noscript><p>All six products remain available above. Search, sorting, saved picks and budget calculations require JavaScript.</p></noscript>
+ </section>
+
+ <section id="guide">
+  <div class="eyebrow">From discovery to a useful shortlist</div>
+  <h2>How to use a PikoBuy spreadsheet</h2>
+  <p>A spreadsheet becomes useful when each row records the exact item you are considering. Keep the product option and unanswered questions beside the price so similar-looking finds are easier to compare.</p>
+  <div class="panels">
+   <article class="panel"><span class="number">1</span><h3>Identify the exact item</h3><p>Find the product on CAFANS and record its source URL, seller, color, size and quantity. Confirm that your intended shopping agent can handle that listing before you plan a purchase.</p></article>
+   <article class="panel"><span class="number">2</span><h3>Check fit and evidence</h3><p>Compare listing measurements with an item you own. Ask for missing dimensions, fabric details or photographs of the selected option. Keep seller statements separate from details you have checked yourself.</p></article>
+   <article class="panel"><span class="number">3</span><h3>Review the full cost</h3><p>Record the current item price and obtain relevant delivery and service quotes. Read the applicable return conditions and confirm the final payable amount before you commit.</p></article>
+  </div>
+ </section>
+
+ <section aria-labelledby="checks-title">
+  <div class="eyebrow">A better comparison starts with better fields</div>
+  <h2 id="checks-title">What to check by product category</h2>
+  <div class="table-wrap">
+   <table>
+    <thead><tr><th scope="col">Category</th><th scope="col">Record before ordering</th><th scope="col">Useful evidence</th></tr></thead>
+    <tbody>
+     <tr><th scope="row">Slides & heels</th><td>Size system, footbed length, width, heel or platform height</td><td>Measurement method, sole views and selected-color photos</td></tr>
+     <tr><th scope="row">Sweatshirts</th><td>Chest width, body length, shoulder width and stated fabric</td><td>Garment measurements and close-ups of seams and cuffs</td></tr>
+     <tr><th scope="row">T-Shirts</th><td>Fit preference, chest width, length and decoration details</td><td>Size chart and close-up photographs of embroidery or print</td></tr>
+     <tr><th scope="row">Jackets</th><td>Layering allowance, sleeve length, lining and closure</td><td>Interior views, fastening details and measurements</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <p class="small" style="margin-top:13px">A photograph can help assess visible details. It does not establish authenticity, material composition or long-term durability.</p>
+ </section>
+
+ <section class="dark" id="budget" aria-labelledby="budget-title">
+  <div class="budget">
+   <div><div class="eyebrow">Plan before you pay</div><h2 id="budget-title">Build a more realistic budget.</h2><p>The catalog price is one part of your purchase. Enter your own USD estimates to see a working subtotal.</p><p>For example, a $27.50 item plus $5 domestic delivery, $20 international delivery and $3 fees gives a $55.50 subtotal before any unentered charges.</p><p class="small">This tool provides arithmetic only. It is not a PikoBuy shipping quote or a tax calculation. An empty field remains unknown.</p></div>
+   <form id="budget-form">
+    <div class="budget-fields">
+     <label class="field">Items (USD)<input type="number" id="items" min="0" step="0.01" placeholder="27.50"></label>
+     <label class="field">Domestic delivery (USD)<input type="number" id="domestic" min="0" step="0.01" placeholder="Enter estimate"></label>
+     <label class="field">International delivery (USD)<input type="number" id="shipping" min="0" step="0.01" placeholder="Enter quote"></label>
+     <label class="field">Other fees / taxes (USD)<input type="number" id="fees" min="0" step="0.01" placeholder="Enter estimate"></label>
+    </div>
+    <div class="total" aria-live="polite"><span>Subtotal of entered amounts</span><output id="total">$0.00</output><p id="budget-note" class="small">4 cost fields are still unknown.</p></div>
+   </form>
+  </div>
+ </section>
+
+ <section aria-labelledby="research-title">
+  <div class="eyebrow">Research notes</div>
+  <h2 id="research-title">Keep your product list useful</h2>
+  <div class="two">
+   <article class="article"><h3>Make each saved row traceable</h3><p>Save a source link and a checked date alongside every product. Include the selected variant: a price for one size, color or quantity may not apply to another option. When details change, update the row before comparing it with a new find.</p><p>The CSV export on this page includes the original CAFANS product record, source price and snapshot date. Add seller replies, measurements and your own current checks when you open the file in your spreadsheet app.</p></article>
+   <article class="article"><h3>Treat missing details as open questions</h3><p>A short product title is a browsing label. It does not confirm fabric composition, fit, stock or agent eligibility. Record specific questions such as “confirm chest width in centimetres” instead of assuming that a familiar size label is enough.</p><p>If you receive warehouse photos, compare the exact item, size, color, quantity and visible condition against your order. Review the applicable inspection and return process with the service handling your purchase.</p></article>
+  </div>
+ </section>
+
+ <section id="faq" aria-labelledby="faq-title">
+  <div class="eyebrow">Before you continue</div>
+  <h2 id="faq-title">PikoBuy spreadsheet FAQ</h2>
+  <details open><summary>What is a PikoBuy spreadsheet?</summary><p>A PikoBuy spreadsheet is a product research list used to organize finds, source links, selected options, prices and shopping notes. This page combines a CAFANS catalog selection with comparison tools and guidance.</p></details>
+  <details><summary>Do the buttons open PikoBuy?</summary><p>No. The PikoBuy spreadsheet and Buy it now buttons both open CAFANS. Confirm agent availability and the exact source listing at the destination before ordering.</p></details>
+  <details><summary>Are the displayed prices the final delivered cost?</summary><p>No. Prices are estimated USD amounts captured from CAFANS on November 19, 2026. Shipping, fees, taxes and exchange-rate changes may affect the amount you pay.</p></details>
+  <details><summary>Are the catalog images verified QC photographs?</summary><p>The images are catalog images sourced from CAFANS. They are not presented as verified warehouse QC photographs or proof of authenticity.</p></details>
+  <details><summary>How do I save and export products?</summary><p>Select Save pick on the cards you want to keep, then choose Export saved picks. Your CSV contains product names, categories, estimated prices, original source URLs and the source-check date. Picks stay in memory for this page session; refreshing clears the selection.</p></details>
+  <details><summary>Is this selection updated automatically?</summary><p>No. This is a six-product snapshot checked on 19 November 2026. Open CAFANS to review its current catalog and confirm the details of any item you are considering.</p></details>
+ </section>
+
+ <section class="cta">
+  <div class="eyebrow">Your next step</div>
+  <h2>Find a product. Check the details.</h2>
+  <p>Continue to CAFANS for the wider catalog and current product information.</p>
+  <div class="actions"><a class="btn" href="https://cafans.com">PikoBuy spreadsheet ↗</a><a class="btn light" href="https://cafans.com">Buy it now ↗</a></div>
+ </section>
+</main>
+<footer>
+ <div class="wrap footer-row">
+  <div><p><strong>PIKO / FINDS — Independent research guide.</strong><br>Not affiliated with or endorsed by PikoBuy. Products, images and price references are sourced from CAFANS. This page does not process orders, payments or shipping. Brand names belong to their respective owners.</p><p>No advertising trackers or persistent browser storage are added by this page. Product images load from an external image host; visiting CAFANS is subject to that site's policies.</p></div>
+  <span>Content checked<br><time datetime="2026-11-19">19 November 2026</time></span>
+ </div>
+</footer>
+<script>
+(function(){
+"use strict";
+const grid=document.getElementById("products");
+const cards=Array.from(grid.querySelectorAll(".card"));
+const search=document.getElementById("search");
+const sort=document.getElementById("sort");
+const status=document.getElementById("status");
+const saved=new Set();
+let category="all";
+function render(){
+ const query=search.value.trim().toLowerCase();
+ const ordered=cards.slice();
+ if(sort.value==="low")ordered.sort((a,b)=>Number(a.dataset.price)-Number(b.dataset.price));
+ if(sort.value==="high")ordered.sort((a,b)=>Number(b.dataset.price)-Number(a.dataset.price));
+ let count=0;
+ ordered.forEach(card=>{
+  const match=(category==="all"||card.dataset.category===category)&&card.dataset.name.toLowerCase().includes(query);
+  card.hidden=!match;
+  if(match)count++;
+  grid.appendChild(card);
+ });
+ document.getElementById("empty").hidden=count!==0;
+ status.textContent=count+" of "+cards.length+" selections shown · "+saved.size+" saved · Estimated USD prices";
+}
+search.addEventListener("input",render);
+sort.addEventListener("change",render);
+document.querySelectorAll("[data-filter]").forEach(button=>{
+ button.addEventListener("click",()=>{
+  category=button.dataset.filter;
+  document.querySelectorAll("[data-filter]").forEach(b=>b.setAttribute("aria-pressed",String(b===button)));
+  render();
+ });
+});
+cards.forEach(card=>{
+ const button=card.querySelector(".save");
+ button.addEventListener("click",()=>{
+  const id=card.dataset.source;
+  if(saved.has(id))saved.delete(id);else saved.add(id);
+  const selected=saved.has(id);
+  button.setAttribute("aria-pressed",String(selected));
+  button.textContent=selected?"Saved ✓":"Save pick +";
+  render();
+ });
+});
+document.getElementById("export").addEventListener("click",()=>{
+ const chosen=cards.filter(card=>saved.has(card.dataset.source));
+ if(!chosen.length){status.textContent="Select Save pick on at least one product before exporting.";return;}
+ const rows=[["Product","Category","Estimated price (USD)","CAFANS source record","Source checked","Notes"]];
+ chosen.forEach(card=>rows.push([card.dataset.name,card.dataset.category,card.dataset.price,card.dataset.source,"2026-11-19","Catalog snapshot; confirm current details and agent availability"]));
+ const csv="\uFEFF"+rows.map(row=>row.map(value=>'"'+String(value).replace(/"/g,'""')+'"').join(",")).join("\r\n");
+ const url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));
+ const link=document.createElement("a");
+ link.href=url;link.download="pikobuy-spreadsheet-shortlist.csv";
+ document.body.appendChild(link);link.click();link.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),1000);
+ status.textContent="Exported "+chosen.length+" saved product"+(chosen.length===1?"":"s")+".";
+});
+const fields=["items","domestic","shipping","fees"].map(id=>document.getElementById(id));
+const format=new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"});
+function budget(){
+ let subtotal=0,unknown=0,invalid=false;
+ fields.forEach(field=>{
+  if(field.value===""){unknown++;return;}
+  if(!field.validity.valid||!Number.isFinite(field.valueAsNumber)){invalid=true;return;}
+  subtotal+=field.valueAsNumber;
+ });
+ document.getElementById("total").textContent=invalid?"Check inputs":format.format(subtotal);
+ document.getElementById("budget-note").textContent=invalid?"Use non-negative amounts with up to two decimal places.":unknown?unknown+" cost field"+(unknown===1?" is":"s are")+" still unknown. This is a partial subtotal.":"All four fields entered. Confirm your estimates against current quotes.";
+}
+document.getElementById("budget-form").addEventListener("submit",event=>event.preventDefault());
+fields.forEach(field=>field.addEventListener("input",budget));
+})();
+</script>
+</body>
+</html>
